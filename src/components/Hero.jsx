@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col md:flex-row items-center lg:h-[90vh] justify-between ">
           <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:px-0 lg:mt-0 mt-10">
-            <h1 className="lg:text-7xl text-4xl font-bold lg:leading-snug">
+            <h1 className="lg:text-7xl text-4xl font-bold lg:leading-snug ">
               Hi There, <br />
               I'm JOEL <span className="text-blue-400">MATHEW</span>
             </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
               and modern web technologies. I love creating beautiful and
               functional websites that solve real-world problems.
             </p>
-            <button className="bg-gray-700 text-white px-3 py-2 w-max rounded-md">
+            <button className="bg-gray-700 text-white px-3 py-2 w-max rounded-xl">
               <a href="./text.txt" download="resume.txt" target="_blank">
                 Download CV
               </a>
@@ -53,11 +53,25 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute top-52 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-8 rounded-full">
-        <FaGithub className="w-10 h-10 text-gray-900" />
-        <FaInstagram className="w-10 h-10 text-gray-900" />
-        <FaXTwitter className="w-10 h-10 text-gray-900" />
+        <a href="https://github.com/joeltdev" target="blank">
+          {" "}
+          <FaGithub className="w-10 h-10 text-gray-900" />
+        </a>
+        <a href="https://www.instagram.com/" target="blank">
+          {" "}
+          <FaInstagram className="w-10 h-10 text-gray-900" />
+        </a>
+        <a href="https://x.com/" target="blank">
+          <FaXTwitter className="w-10 h-10 text-gray-900" />
+        </a>
         {/* <FaTwitter className="w-10 h-10 text-blue-700" /> */}
-        <FaLinkedin className="w-10 h-10 text-gray-900" />
+        <a
+          href="https://www.linkedin.com/in/joel-thomas-mathew-18422b1b8/"
+          target="blank"
+        >
+          {" "}
+          <FaLinkedin className="w-10 h-10 text-gray-900" />
+        </a>
       </div>
     </section>
   );

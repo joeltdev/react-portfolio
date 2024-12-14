@@ -1,5 +1,5 @@
 import React from "react";
-import Portfolio from "../assets/Portfolio.png";
+import Portfolio from "../assets/Screenshot 2024-12-14 at 11.01.41 PM.jpeg";
 import SpicyBites from "../assets/SpicyBites.png";
 import Youtube from "../assets/Screenshot 2024-12-14 at 7.56.15 PM.jpeg";
 import Webelite from "../assets/Webelite.png";
@@ -26,8 +26,8 @@ const Projects = () => {
       title: "Netflix Clone",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Youtube,
-      live: "https://youtube-clone-93300.netlify.app/",
-      github: "https://github.com/rohitsingh93300/YouTube-clone",
+      live: "https://netflix-clone-jtm.vercel.app/",
+      github: "https://github.com/joeltdev/netflix-clone",
     },
     {
       title: "Webelite builder",
@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <section id="projects" className="relative bg-gray-700 py-10 px-4">
       <div className="mb-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-white border-b border-red-500 w-max pb-4">
+        <h2 className="text-3xl font-bold mb-8 text-white border-b border-blue-500 w-max pb-4">
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10">

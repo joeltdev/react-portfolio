@@ -18,15 +18,14 @@ const About = () => {
       <div className="bg-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-base text-red-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-blue-500 font-semibold tracking-wide uppercase">
               About Me
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Hi, I'm Rohit singh
+              Hi, I'm Joel Mathew
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              A Full-Stack Developer with expertise in web development,
-              WordPress, SEO, and the MERN stack.
+              A Full-Stack Developer with expertise in web development
             </p>
           </div>
           <div className="mt-10">
@@ -38,7 +37,7 @@ const About = () => {
                 <p className="mt-4 text-lg text-gray-600">
                   I started my journey in web development with a passion for
                   creating intuitive and scalable applications. With proficiency
-                  in the MERN stack (MongoDB, Express.js, React, and Node.js), I
+                  in the MERN stack (MongoDB, Express.js, React,Node.js and Golang), I
                   have built Projects such as a full-stack food ordering website
                   , ajob portal, and even a LinkedIn clone. My projects
                   demonstrate my ability to integrate poweful backend solutions
@@ -50,52 +49,52 @@ const About = () => {
                   className="p-2 rounded-lg w-52 mt-4"
                 />
               </div>
-              <div className="border border-red-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center shadow-lg shadow-red-300">
-                <h3 className="text-2xl font-semibold text-red-600">
+              <div className="border border-blue-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center shadow-lg shadow-blue-300">
+                <h3 className="text-2xl font-semibold text-blue-600">
                   Skills & Expertise
                 </h3>
                 <div className="flex items-center justify-center flex-wrap gap-3">
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Html} alt="" className="w-10" />
                     <span className="font-semibold">HTML</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Css} alt="" className="w-8" />
                     <span className="font-semibold">CSS</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Javascript} alt="" className="w-10" />
                     <span className="font-semibold">Javascript</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={ReactLogo} alt="" className="w-8 rounded-full" />
                     <span className="font-semibold">React</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={ReduxLogo} alt="" className="w-8" />
                     <span className="font-semibold">Redux</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Tailwind} alt="" className="w-8 rounded-full" />
                     <span className="font-semibold">Tailwind Css</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Bootstrap} alt="" className="w-10" />
                     <span className="font-semibold">Bootstrap</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={NodeLogo} alt="" className="w-10" />
                     <span className="font-semibold">Node Js</span>
                   </div>
-                  <div className="border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Mongodb} alt="" className="w-10" />
                     <span className="font-semibold">Mongodb</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Express} alt="" className="w-10" />
                     <span className="font-semibold">Express Js</span>
                   </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
+                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={NextJs} alt="" className="w-9" />
                     <span className="font-semibold">Next Js</span>
                   </div>

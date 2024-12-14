@@ -10,14 +10,14 @@ const Navbar = () => {
       <div className=" max-w-7xl mx-auto flex h-14 items-center">
         <div className="md:mr-4 flex justify-between w-full">
           <a href="#" className="mr-6 flex items-center space-x-2">
-            <div className="flex text-xl font-extrabold items-center justify-center h-screen">
+            <div className="flex text-xl font-thin items-center justify-center h-screen font-mono">
               <span className="text-gray-700">&lt;</span>
               <span className="text-blue-500">JOEL</span>
-              <span className="text-gray-700"> MATHEW</span>
+              <span className="text-gray-500">MATHEW</span>
               <span className="text-gray-700 text-opacity-50"> /&gt;</span>
             </div>
           </a>
-          <nav className="md:flex hidden items-center space-x-6 text-l font-bold font-sans">
+          <nav className="md:flex hidden items-center space-x-20 text-l font-mono">
             <a
               href="#about"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
@@ -29,12 +29,6 @@ const Navbar = () => {
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
               Projects
-            </a>
-            <a
-              href="#testimonials"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              Testimonials
             </a>
             <a
               href="#contact"
