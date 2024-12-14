@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import hero from "../assets/hero.png";
 import reactLogo from "../assets/React.png";
 import reduxLogo from "../assets/Redux.png";
@@ -52,11 +53,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute top-52 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-8 rounded-full">
-        <FaFacebook className="w-10 h-10 text-blue-600" />
-        <FaInstagram className="w-10 h-10 text-red-500" />
-        <FaXTwitter className="w-10 h-10 text-black" />
+        <FaGithub className="w-10 h-10 text-gray-900" />
+        <FaInstagram className="w-10 h-10 text-gray-900" />
+        <FaXTwitter className="w-10 h-10 text-gray-900" />
         {/* <FaTwitter className="w-10 h-10 text-blue-700" /> */}
-        <FaLinkedin className="w-10 h-10 text-blue-500" />
+        <FaLinkedin className="w-10 h-10 text-gray-900" />
       </div>
     </section>
   );

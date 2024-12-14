@@ -1,7 +1,7 @@
 import React from "react";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import linkedin from "../assets/linkedin.png";
+// import facebook from "../assets/facebook.png";
+// import instagram from "../assets/instagram.png";
+// import linkedin from "../assets/linkedin.png";
 import Lottie from "lottie-react";
 import contact from "../assets/Contact.json";
 
@@ -21,7 +21,7 @@ const Contact = () => {
               I'm always open to new opportunities and collaboration. Feel free
               to reach out!
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-foreground/60 hover:text-foreground/80"
@@ -40,7 +40,7 @@ const Contact = () => {
               >
                 <img src={linkedin} alt="" className="h-6 w-6" />
               </a>
-            </div>
+            </div> */}
             <Lottie
               animationData={contact}
               className="w-[350px] mx-auto lg:w-[500px]"

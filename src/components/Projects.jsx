@@ -1,7 +1,7 @@
 import React from "react";
 import Portfolio from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
-import Youtube from "../assets/Youtube.png";
+import Youtube from "../assets/Screenshot 2024-12-14 at 7.56.15 PM.jpeg";
 import Webelite from "../assets/Webelite.png";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
@@ -23,7 +23,7 @@ const Projects = () => {
       github: "https://github.com/rohitsingh93300/YtSpicyBites",
     },
     {
-      title: "YouTube Clone",
+      title: "Netflix Clone",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Youtube,
       live: "https://youtube-clone-93300.netlify.app/",
