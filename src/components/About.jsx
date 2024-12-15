@@ -4,11 +4,10 @@ import Html from "../assets/Html.png";
 import Css from "../assets/CSS.png";
 import Javascript from "../assets/JS.png";
 import ReactLogo from "../assets/React.png";
-import ReduxLogo from "../assets/Redux.png";
 import Tailwind from "../assets/Tailwind Css.png";
-import Bootstrap from "../assets/Bootstrap.png";
+import MongoDb from "../assets/mongodb.svg";
 import NodeLogo from "../assets/NodeLogo.png";
-import Mongodb from "../assets/mongodb.svg";
+import Golang from "../assets/Go-Logo_Blue (1).svg";
 import Express from "../assets/Express.png";
 import NextJs from "../assets/NextJs.png";
 
@@ -70,17 +69,17 @@ const About = () => {
                     <img src={Tailwind} alt="" className="w-8 rounded-full" />
                     <span className="font-normal font-sans">Tailwind Css</span>
                   </div>
-                  <div className="border border-gray-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-700">
-                    <img src={Bootstrap} alt="" className="w-10" />
-                    <span className="font-normal font-sans">Bootstrap</span>
+                  <div className="border border-gray-400 flex items-center gap-0 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-700">
+                    <img src={MongoDb} alt="" className="w-10" />
+                    <span className="font-normal font-sans">Mongodb</span>
                   </div>
                   <div className="border border-gray-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-700">
                     <img src={NodeLogo} alt="" className="w-10" />
                     <span className="font-normal font-sans">Node Js</span>
                   </div>
                   <div className="border border-gray-400 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-gray-700">
-                    <img src={Mongodb} alt="" className="w-10" />
-                    <span className="font-normal font-sans">Mongodb</span>
+                    <img src={Golang} alt="" className="w-10" />
+                    <span className="font-normal font-sans">Golang</span>
                   </div>
                   <div className="border border-gray-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-gray-700">
                     <img src={Express} alt="" className="w-10" />
