@@ -6,13 +6,13 @@ const Navbar = () => {
   const [mobileMenuOpen, setmMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 lg:px-0">
+    <header className=" sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 lg:px-0">
       <div className=" max-w-7xl mx-auto flex h-14 items-center">
         <div className="md:mr-4 flex justify-between w-full">
           <a href="#" className="mr-6 flex items-center space-x-2">
-            <div className="flex text-xl font-thin items-center justify-center h-screen font-mono">
+            <div className="flex text-xl font-thin items-center justify-center h-screen">
               <span className="text-gray-700">&lt;</span>
-              <span className="text-blue-500">JOEL</span>
+              <span className="text-gray-900">JOEL</span>
               <span className="text-gray-500">MATHEW</span>
               <span className="text-gray-700 text-opacity-50"> /&gt;</span>
             </div>
