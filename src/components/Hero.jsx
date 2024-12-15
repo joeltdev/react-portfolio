@@ -4,12 +4,12 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import hero from "../assets/a-realistic-cartoon-portrait-of-a-23-yea_ysAsbjWOSsSNA4hTWVix3g_ErxRV28sSyqTkSTdwUITAA-Photoroom.png";
 import reactLogo from "../assets/React.png";
-import reduxLogo from "../assets/Redux.png";
+import reduxLogo from "../assets/NextJs.png";
 import tailwind from "../assets/Tailwind Css.png";
 /* bg-[#FEFEFE] */
 const Hero = () => {
   return (
-    <section className="relative "> 
+    <section className="relative ">
       <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col md:flex-row items-center lg:h-[90vh] justify-between ">
           <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:px-0 lg:mt-0 mt-10">
@@ -30,11 +30,11 @@ const Hero = () => {
               functional websites that solve real-world problems.
             </p>
 
-            <button className="bg-gray-00 text-white px-3 py-2 w-max rounded-xl">
+            {/* <button className="bg-gray-00 text-white px-3 py-2 w-max rounded-xl">
               <a href="./text.txt" download="resume.txt" target="_blank">
                 Download CV
               </a>
-            </button>
+            </button> */}
           </div>
           <div className="md:w-1/2 relative flex justify-center items-end">
             <div className="flex justify-center items-center relative">

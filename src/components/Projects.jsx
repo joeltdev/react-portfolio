@@ -10,6 +10,7 @@ import Cards from "./Cards";
 const Projects = () => {
   const projectJson = [
     {
+      id: 1,
       title: "Portfolio",
       desc: "Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.",
       image: Portfolio,
@@ -17,6 +18,7 @@ const Projects = () => {
       github: "https://github.com/rohitsingh93300/portfolio",
     },
     {
+      id: 2,
       title: "Spicy Bites",
       desc: "The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!",
       image: SpicyBites,
@@ -24,6 +26,7 @@ const Projects = () => {
       github: "https://github.com/rohitsingh93300/YtSpicyBites",
     },
     {
+      id: 3,
       title: "Netflix Clone",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Youtube,
@@ -31,6 +34,7 @@ const Projects = () => {
       github: "https://github.com/joeltdev/netflix-clone",
     },
     {
+      id: 4,
       title: "Webelite builder",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Webelite,
@@ -38,6 +42,7 @@ const Projects = () => {
       github: "#",
     },
     {
+      id: 5,
       title: "Super Car",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Supercar,
@@ -45,6 +50,7 @@ const Projects = () => {
       github: "https://github.com/rohitsingh93300/supercars",
     },
     {
+      id: 6,
       title: "Super Car",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Supercartwo,
@@ -60,8 +66,8 @@ const Projects = () => {
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10">
-          {projectJson.map((items) => {
-            return <Cards item={items} />;
+          {projectJson.map((item, index) => {
+            return <Cards key={item.id} item={item} />;
           })}
         </div>
       </div>
