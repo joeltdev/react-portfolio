@@ -15,7 +15,7 @@ const Projects = () => {
       desc: "Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.",
       image: Portfolio,
       live: "https://react-portfolio-git-main-joels-projects-a1cb82de.vercel.app/",
-      github: "https://github.com/rohitsingh93300/portfolio",
+      github: "https://github.com/joeltdev/react-portfolio",
     },
     {
       id: 2,
