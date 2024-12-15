@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Netflix Clone",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Youtube,
-      live: "https://netflix-clone-jtm.vercel.app/login",
+      live: "https://netflix-clone-jtm.vercel.app",
       github: "https://github.com/joeltdev/netflix-clone",
     },
     {
