@@ -35,13 +35,13 @@ const About = () => {
                   My Journey
                 </h3>
                 <p className="mt-4 text-lg text-gray-600 font-light">
-                  I started my journey in web development with a passion for
-                  creating intuitive and scalable applications. With proficiency
-                  in the MERN stack (MongoDB, Express.js, React,Node.js and
-                  Golang), I have built Projects such as a full-stack food
-                  ordering website , ajob portal, and even a LinkedIn clone. My
-                  projects demonstrate my ability to integrate poweful backend
-                  solutions with sleek, user-friendly frontend designs.
+                  I began my web development journey with a passion for building
+                  intuitive and scalable applications. Proficient in the MERN
+                  stack (MongoDB, Express.js, React, Node.js) and Golang, I have
+                  developed projects including a full-stack food ordering
+                  website, a job portal, and a LinkedIn clone. These projects
+                  showcase my ability to combine robust backend solutions with
+                  sleek, user-friendly frontend designs.
                 </p>
                 <img src="" alt="" className="p-2 rounded-lg w-52 mt-4" />
               </div>
@@ -99,12 +99,13 @@ const About = () => {
               More About Me
             </h3>
             <p className="mt-6 text-lg text-gray-600 font-light">
-              Apart from coding, I am passionate about learning new technologies
-              and keeping myself up-to-date with the latest trends in web
-              development. I also run a YouTube channel where I teach
-              Javascript, MERN Stack development, Wordpress and digital
-              Marketing, helping others dive deep into the world of programming
-              and technology.
+              In addition to coding, I’m deeply passionate about learning new
+              technologies and staying up-to-date with the latest trends in web
+              development. I also run a YouTube channel where I share my
+              knowledge on topics like JavaScript, MERN Stack development,
+              WordPress, and digital marketing. Through my channel, I help
+              others explore and dive deep into the world of programming and
+              technology.
             </p>
           </div>
         </div>
