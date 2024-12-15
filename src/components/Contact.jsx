@@ -51,13 +51,13 @@ const Contact = () => {
           <div className="md:w-1/2 mb-8 ml-2 md:mb-0">
             <h2
               className="text-3xl font-thin font-sans
-             mb-3 text-blue-400"
+             mb-3 text-gray-300 border-b  border-gray-200 w-max pb-4"
             >
               Get in Touch
             </h2>
-            <p className="mb-4 text-white/85 font-light text-2xl">
-              I'm always open to new opportunities and collaboration. <br />
-              Feel free to reach out!
+            <p className="mb-4 text-gray-200/85 font-light text-2xl ">
+              Always open to new opportunities and collaborations.<br /> Don’t
+              hesitate to reach out!
             </p>
             {/* <div className="flex space-x-4">
               <a
@@ -86,7 +86,7 @@ const Contact = () => {
           </div>
           <form
             onSubmit={onSubmit}
-            className="w-full md:w-1/2 bg-gray-300 rounded-lg border border-blue-300 shadow-lg shadow-blue-300 p-10"
+            className="w-full md:w-1/2 bg-gray-300 rounded-lg border border-gray-600 shadow-lg shadow-gray-600 p-10"
           >
             <h1 className="text-gray-900 text-4xl  mb-7 font-normal font-sans">
               Contact Me

@@ -50,6 +50,7 @@ const Hero = () => {
                 alt=""
                 className="absolute w-12 top-0 right-5 md:hidden"
               />
+
               <img
                 src={tailwind}
                 alt=""
