@@ -55,10 +55,10 @@ export default function Particle() {
             },
             particles: {
               color: {
-                value: "#000000", //dots
+                value: "#1f2937", //dots
               },
               links: {
-                color: "#14b8a6", //line
+                color: "#000000", //line
 
                 distance: 150,
                 enable: true,

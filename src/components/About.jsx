@@ -67,10 +67,6 @@ const About = () => {
                     <span className="font-normal font-sans">React</span>
                   </div>
                   <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
-                    <img src={ReduxLogo} alt="" className="w-8" />
-                    <span className="font-normal font-sans">Redux</span>
-                  </div>
-                  <div className="border border-blue-400 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-blue-400">
                     <img src={Tailwind} alt="" className="w-8 rounded-full" />
                     <span className="font-normal font-sans">Tailwind Css</span>
                   </div>
