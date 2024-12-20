@@ -39,7 +39,7 @@ const Projects = () => {
       desc: "Google Gemini AI is a cutting-edge multimodal model that integrates text and images for versatile, next-generation AI solutions.",
       image: Gemini,
       live: "https://gemini-clone-jtm.vercel.app/",
-      github: "https://github.com/joeltdev/react-portfolio",
+      github: "https://github.com/joeltdev/gemini-clone",
     },
     {
       id: 5,
