@@ -3,7 +3,7 @@ import Portfolio from "../assets/Screenshot 2024-12-15 at 1.34.14 PM.jpeg";
 import Supercartwo from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
 import Youtube from "../assets/Screenshot 2024-12-14 at 7.56.15 PM.jpeg";
-import Webelite from "../assets/Webelite.png";
+import Gemini from "../assets/Gemini.jpeg";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
 
@@ -35,15 +35,15 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Webelite builder",
-      desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Webelite,
-      live: "https://www.webelitebuilders.com/",
-      github: "#",
+      title: "Gemini AI Clone",
+      desc: "Google Gemini AI is a cutting-edge multimodal model that integrates text and images for versatile, next-generation AI solutions.",
+      image: Gemini,
+      live: "gemini-clone-jtm.vercel.app",
+      github: "https://github.com/joeltdev/react-portfolio",
     },
     {
       id: 5,
-      title: "Super Car",
+      title: "Google gemini",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
       image: Supercar,
       live: "https://supercar123.netlify.app/",
