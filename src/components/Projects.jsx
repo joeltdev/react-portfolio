@@ -53,7 +53,7 @@ const Projects = () => {
       id: 6,
       title: "Super Car",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Supercartwo,
+      image: A2C12142-DB92-49E2-993E-685CBDFA2148_1_201_a.jpeg,
       live: "https://supercar123.netlify.app/",
       github: "https://github.com/rohitsingh93300/supercars",
     },
