@@ -2,7 +2,6 @@ import React from "react";
 import Portfolio from "../assets/Screenshot 2024-12-15 at 1.34.14 PM.jpeg";
 import Supercartwo from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
-import Youtube from "../assets/Screenshot 2024-12-14 at 7.56.15 PM.jpeg";
 import Gemini from "../assets/Gemini.jpeg";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
