@@ -41,14 +41,14 @@ const Projects = () => {
       live: "https://gemini-clone-jtm.vercel.app/",
       github: "https://github.com/joeltdev/gemini-clone",
     },
-    {
-      id: 5,
-      title: "Google gemini",
-      desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Medbay,
-      live: "https://supercar123.netlify.app/",
-      github: "https://github.com/rohitsingh93300/supercars",
-    },
+{
+  id: 6,
+  title: "MedBay",
+  desc: "A clean, modern medical ecommerce website for pharma needs.",
+  image: MedBay, // make sure you imported this image
+  live: "https://preview--medbay-ecommerce-haven.lovable.app/",
+  github: "", // add GitHub link if you have one
+},
     {
       id: 6,
       title: "Super Car",
