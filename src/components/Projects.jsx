@@ -3,7 +3,7 @@ import Portfolio from "../assets/portfolio.jpg";
 import Youtube from "../assets/Youtube.png";
 import Supercartwo from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
- import Medbay from "../assets/medidical.png";
+import Medbay from "../assets/medidical.png";
 import Gemini from "../assets/Gemini.jpeg";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
