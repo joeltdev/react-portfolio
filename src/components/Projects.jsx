@@ -1,5 +1,5 @@
 import React from "react";
-import Portfolio from "../assets/Screenshot 2024-12-15 at 1.34.14 PM.jpeg";
+import Portfolio from "../assets/portfolio.jpg";
 import Supercartwo from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
  import Medbay from "../assets/medidical.png";
