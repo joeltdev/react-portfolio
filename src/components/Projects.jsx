@@ -2,6 +2,7 @@ import React from "react";
 import Portfolio from "../assets/Screenshot 2024-12-15 at 1.34.14 PM.jpeg";
 import Supercartwo from "../assets/Portfolio.png";
 import SpicyBites from "../assets/SpicyBites.png";
+ import Medbay from "../assets/medidical.png";
 import Gemini from "../assets/Gemini.jpeg";
 import Supercar from "../assets/Supercar.png";
 import Cards from "./Cards";
@@ -44,7 +45,7 @@ const Projects = () => {
       id: 5,
       title: "Google gemini",
       desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Gemini,
+      image: Medbay,
       live: "https://supercar123.netlify.app/",
       github: "https://github.com/rohitsingh93300/supercars",
     },
