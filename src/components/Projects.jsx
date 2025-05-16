@@ -42,14 +42,14 @@ const Projects = () => {
       live: "https://gemini-clone-jtm.vercel.app/",
       github: "https://github.com/joeltdev/gemini-clone",
     },
-{
-  id: 6,
-  title: "MedBay",
-  desc: "A clean, modern medical ecommerce website for pharma needs.",
-  image: MedBay, // make sure you imported this image
-  live: "https://preview--medbay-ecommerce-haven.lovable.app/",
-  github: "", // add GitHub link if you have one
-},
+    {
+      id: 5,
+      title: "MedBay",
+      desc: "A clean, modern medical ecommerce website for pharma needs.",
+      image: Medbay,
+      live: "https://preview--medbay-ecommerce-haven.lovable.app/",
+      github: "",
+    },
     {
       id: 6,
       title: "Super Car",
@@ -62,14 +62,14 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative bg-gray-700 py-10 px-4">
-      <div className="mb-16 max-w-7xl mx-auto ">
-        <h2 className="text-3xl font-thin font-sans mb-8 text-gray-200 border-b  border-gray-400 w-max pb-4">
+      <div className="mb-16 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-thin font-sans mb-8 text-gray-200 border-b border-gray-400 w-max pb-4">
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10">
-          {projectJson.map((item, index) => {
-            return <Cards key={item.id} item={item} />;
-          })}
+          {projectJson.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </section>
