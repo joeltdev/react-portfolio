@@ -2,10 +2,10 @@ import React from "react";
 import Portfolio from "../assets/portfolio.jpg";
 import Youtube from "../assets/Youtube.png";
 import Supercartwo from "../assets/Portfolio.png";
-import SpicyBites from "../assets/SpicyBites.png";
+import PhysicianWebsite from "../assets/Physician_Website2.png";
 import Medbay from "../assets/medidical.png";
 import Gemini from "../assets/Gemini.jpeg";
-import Supercar from "../assets/Supercar.png";
+import MarkNestImg from "../assets/MarkNest.png";
 import Cards from "./Cards";
 
 const Projects = () => {
@@ -20,11 +20,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Spicy Bites",
-      desc: "The team at Webelite Builders exceeded our expectations with their digital marketing expertise. Highly recommend!",
-      image: SpicyBites,
-      live: "https://spicybites.netlify.app/",
-      github: "https://github.com/rohitsingh93300/YtSpicyBites",
+      title: "Physician Website",
+      desc: "Modern, mobile-optimized site for Dr. Sruthy Jose with a trust-focused light-blue design and a clear Book Appointment CTA.",
+      image: PhysicianWebsite,
+      live: "https://dr-sruthy-website-offical.vercel.app/?_cb=1762081247684",
+      github: "",
     },
     {
       id: 3,
@@ -52,10 +52,10 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Super Car",
-      desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Supercar,
-      live: "https://supercar123.netlify.app/",
+      title: "MarkNest",
+      desc: "Save, organize, and revisit your favorite content in one encrypted, beautiful nest.",
+      image: MarkNestImg,
+      live: "https://preview--marknest-ui-haven.lovable.app/signin",
       github: "https://github.com/rohitsingh93300/supercars",
     },
   ];
