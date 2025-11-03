@@ -61,9 +61,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="relative bg-gray-700 py-10 px-4">
+    <section id="projects" className="relative py-16 px-4 bg-gradient-to-br from-sky-100 via-indigo-50 to-rose-100">
       <div className="mb-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-thin font-sans mb-8 text-gray-200 border-b border-gray-400 w-max pb-4">
+        <h2 className="text-3xl font-thin font-sans mb-8 text-gray-800 border-b border-gray-300 w-max pb-4">
           My Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10">

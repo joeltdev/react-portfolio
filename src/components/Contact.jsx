@@ -44,18 +44,18 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="z-50 bg-gray-900 relative py-10 px-5 md:px-0"
+      className="z-50 relative py-16 px-5 md:px-0 bg-gradient-to-br from-slate-950 via-gray-900 to-black"
     >
       <div className="mb-16 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 mb-8 ml-2 md:mb-0">
             <h2
               className="text-3xl font-thin font-sans
-             mb-3 text-gray-300 border-b  border-gray-200 w-max pb-4"
+             mb-3 text-gray-100 border-b  border-gray-700 w-max pb-4"
             >
               Get in Touch
             </h2>
-            <p className="mb-4 text-gray-200/85 font-light text-2xl ">
+            <p className="mb-4 text-gray-300 font-light text-2xl ">
               Always open to new opportunities and collaborations.<br /> Don’t
               hesitate to reach out!
             </p>
@@ -86,15 +86,15 @@ const Contact = () => {
           </div>
           <form
             onSubmit={onSubmit}
-            className="w-full md:w-1/2 bg-gray-300 rounded-lg border border-gray-600 shadow-lg shadow-gray-600 p-10"
+            className="w-full md:w-1/2 bg-slate-900/60 backdrop-blur rounded-lg border border-slate-700 shadow-xl shadow-black/40 p-10"
           >
-            <h1 className="text-gray-900 text-4xl  mb-7 font-normal font-sans">
+            <h1 className="text-gray-100 text-4xl  mb-7 font-normal font-sans">
               Contact Me
             </h1>
             <div className="mb-4 ">
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-300"
               >
                 Name
               </label>
@@ -107,13 +107,13 @@ const Contact = () => {
                 name="name"
                 value={name}
                 placeholder="Full Name"
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="mt-1 p-2 block w-full rounded-md bg-slate-800 border border-slate-700 text-gray-100 placeholder:text-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500/30 focus:ring-opacity-50"
               />
             </div>
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-300"
               >
                 Email
               </label>
@@ -126,13 +126,13 @@ const Contact = () => {
                 name="email"
                 value={email}
                 placeholder="Email"
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="mt-1 p-2 block w-full rounded-md bg-slate-800 border border-slate-700 text-gray-100 placeholder:text-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500/30 focus:ring-opacity-50"
               />
             </div>
             <div className="mb-4">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-300"
               >
                 Message
               </label>
@@ -144,10 +144,10 @@ const Contact = () => {
                 name="message"
                 value={message}
                 placeholder="Enter Your Message"
-                className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="mt-1 p-2 block w-full rounded-md bg-slate-800 border border-slate-700 text-gray-100 placeholder:text-gray-400 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500/30 focus:ring-opacity-50"
               />
             </div>
-            <button className="bg-gray-800 text-white px-3 py-2 rounded-lg">
+            <button className="bg-indigo-500 hover:bg-indigo-400 transition text-white px-4 py-2 rounded-lg">
               Send Message
             </button>
           </form>
