@@ -2,7 +2,7 @@ import React from "react";
 import Portfolio from "../assets/portfolio.jpg";
 import Youtube from "../assets/Youtube.png";
 import Supercartwo from "../assets/Portfolio.png";
-import PhysicianWebsite from "../assets/Physician_Website2.png";
+import PhysicianScreenshot from "../assets/screenshot .png";
 import Medbay from "../assets/medidical.png";
 import Gemini from "../assets/Gemini.jpeg";
 import MarkNestImg from "../assets/MarkNest.png";
@@ -22,7 +22,7 @@ const Projects = () => {
       id: 2,
       title: "Physician Website",
       desc: "Modern, mobile-optimized site for Dr. Sruthy Jose with a trust-focused light-blue design and a clear Book Appointment CTA.",
-      image: PhysicianWebsite,
+      image: PhysicianScreenshot,
       live: "https://dr-sruthy-website-offical.vercel.app/?_cb=1762081247684",
       github: "",
     },
