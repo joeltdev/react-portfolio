@@ -3,23 +3,30 @@ import React from "react";
 
 const Cards = ({ item }) => {
   return (
-    <div className="border border-gray-300 rounded-lg shadow-md w-full lg:w-[400px] bg-white overflow-hidden">
-      <img
-        src={item.image}
-        alt=""
-        className="rounded-t-lg w-full h-48 object-cover object-center"
-      />
-      <div className="p-4">
-        <h1 className="text-xl mb-2 font-medium font-sans text-gray-800 min-h-[48px] overflow-hidden">
+    <div className="group relative w-full max-w-sm rounded-2xl border border-gray-200 bg-white/80 backdrop-blur shadow-md hover:shadow-lg transition overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden">
+        <img
+          src={item.image}
+          alt=""
+          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div className="p-5">
+        <h1 className="text-lg mb-2 font-semibold font-sans text-gray-900 min-h-[32px] overflow-hidden">
           {item.title}
         </h1>
-        <p className="text-gray-600 h-20 overflow-hidden">{item.desc}</p>
-        <div className="flex gap-2 mt-3">
-          <button className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-800 transition">
-            <a href={item.live} target="_blank" rel="noopener noreferrer">
-              Live Preview
-            </a>
-          </button>
+        <p className="text-gray-600 max-h-20 overflow-hidden leading-relaxed">
+          {item.desc}
+        </p>
+        <div className="mt-4">
+          <a
+            href={item.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700"
+          >
+            Live Preview
+          </a>
         </div>
       </div>
     </div>
