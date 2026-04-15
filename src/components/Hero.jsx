@@ -64,7 +64,7 @@ const Hero = () => {
               <img 
                 src={hero} 
                 alt="Joel Mathew" 
-                className="h-[400px] md:h-[500px] lg:h-[600px] w-auto object-contain relative z-10"
+                className="h-[500px] md:h-[650px] lg:h-[800px] w-auto object-contain relative z-10 drop-shadow-2xl"
               />
 
               {/* Floating Tech Logos (Desktop Only) */}
