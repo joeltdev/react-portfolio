@@ -1,6 +1,6 @@
 import React from "react";
 import Portfolio from "../assets/portfolio.jpg";
-import Youtube from "../assets/Youtube.png";
+import KCSubramanian from "../assets/kcsubramanian.png";
 import Supercartwo from "../assets/Portfolio.png";
 import PhysicianScreenshot from "../assets/screenshot .png";
 import Medbay from "../assets/medidical.png";
@@ -28,11 +28,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Netflix Clone",
-      desc: "Working with Webelite Builders was a seamless experience. They brought our vision to life with a modern, responsive website.",
-      image: Youtube,
-      live: "https://netflix-clone-jtm.vercel.app",
-      github: "https://github.com/joeltdev/netflix-clone",
+      title: "K.C. Subramanian",
+      desc: "A clean, modern, and professional website for K.C. Subramanian with a focus on seamless user experience and accessibility.",
+      image: KCSubramanian,
+      live: "https://www.kcsubramanian.in/",
+      github: "",
     },
     {
       id: 4,
@@ -61,12 +61,29 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="relative py-16 px-4 bg-gradient-to-br from-sky-100 via-indigo-50 to-rose-100">
-      <div className="mb-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-thin font-sans mb-8 text-gray-800 border-b border-gray-300 w-max pb-4">
-          My Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10">
+    <section id="projects" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+      {/* Subtle Background Pattern/Element */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+        <div className="absolute top-[-10%] right-[-10%] w-[40%] aspect-square bg-blue-500 rounded-full blur-[100px]" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[40%] aspect-square bg-indigo-500 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="max-w-2xl">
+            <h2 className="text-sm font-bold tracking-[0.2em] uppercase text-gray-500 mb-4">
+              Featured Work
+            </h2>
+            <p className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-[1.1]">
+              Recent Projects
+            </p>
+          </div>
+          <p className="text-gray-500 text-lg max-w-sm font-medium">
+            Exploring the intersection of technology and user experience through digital products.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
           {projectJson.map((item) => (
             <Cards key={item.id} item={item} />
           ))}

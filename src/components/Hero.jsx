@@ -1,84 +1,86 @@
 import React from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import { Github, Linkedin, Instagram, Twitter, ArrowRight } from "lucide-react";
 import hero from "../assets/a-realistic-cartoon-portrait-of-a-23-yea_ysAsbjWOSsSNA4hTWVix3g_ErxRV28sSyqTkSTdwUITAA-Photoroom.png";
 import reactLogo from "../assets/React.png";
-import reduxLogo from "../assets/NextJs.png";
-import tailwind from "../assets/Tailwind Css.png";
-/* bg-[#FEFEFE] */
+import nextLogo from "../assets/NextJs.png";
+import tailwindLogo from "../assets/Tailwind Css.png";
+
 const Hero = () => {
   return (
-    <section className="relative ">
-      <div className="max-w-7xl mx-auto ">
-        <div className="flex flex-col md:flex-row items-center lg:h-[90vh] justify-between ">
-          <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col space-y-4 px-6 lg:px-0 lg:mt-0 mt-10">
-            <h1 className="lg:text-6xl text-3xl font-bold lg:leading-tight font-serif text-gray-800">
-              Hi There, <br />
-              I'm <span className="text-black-500">JOEL</span>{" "}
-              <span className="text-black-600">MATHEW</span>
-            </h1>
+    <section className="relative min-h-[90vh] flex items-center px-6 lg:px-8 bg-white overflow-hidden">
+      
+      {/* Background Decorative Text */}
+      <div className="absolute top-20 left-0 pointer-events-none select-none overflow-hidden hidden lg:block">
+        <span className="text-[25rem] font-black text-gray-50 leading-none tracking-tighter">
+          JOEL
+        </span>
+      </div>
 
-            <p className="md:text-xl text-lg mb-6 text-gray-700 font-medium font-sans">
+      <div className="max-w-7xl mx-auto w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Column: Text Content */}
+          <div className="lg:col-span-7 flex flex-col pt-12 lg:pt-0 text-center lg:text-left">
+            <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-gray-400 mb-6">
               Web Developer & Designer
-            </p>
-            <p className="text-base md:text-lg leading-relaxed text-gray-600 font-light">
-              I'm a passionate web developer with expertise in{" "}
-              <span className="text-black-500 font-semibold">React</span>,
-              <span className="text-black-500 font-semibold"> Next.js</span>,
-              and modern web technologies. I love creating beautiful and
-              functional websites that solve real-world problems.
+            </h2>
+            <h1 className="text-6xl md:text-8xl font-bold text-gray-900 tracking-tighter leading-[0.9] mb-8">
+              JOEL <br />
+              <span className="text-gray-300">MATHEW.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+              Crafting high-performance digital experiences with <span className="text-gray-900 font-medium">React</span>, <span className="text-gray-900 font-medium">Next.js</span>, and <span className="text-gray-900 font-medium">Golang</span>.
             </p>
 
-            {/* <button className="bg-gray-00 text-white px-3 py-2 w-max rounded-xl">
-              <a href="./text.txt" download="resume.txt" target="_blank">
-                Download CV
+            <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
+              <a 
+                href="#projects" 
+                className="group flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold tracking-wide hover:bg-black transition-all duration-300 shadow-xl shadow-gray-200"
+              >
+                View My Work
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
-            </button> */}
-          </div>
-          <div className="md:w-1/2 relative flex justify-center items-end">
-            <div className="flex justify-center items-center relative">
-              <img src={hero} alt="" className="lg:h-[90vh] h-96" />
-
-              <img
-                src={reactLogo}
-                alt=""
-                className="absolute w-12 top-36 left-0 rounded-full md:hidden"
-              />
-              <img
-                src={reduxLogo}
-                alt=""
-                className="absolute w-12 top-0 right-5 md:hidden"
-              />
-
-              <img
-                src={tailwind}
-                alt=""
-                className="absolute w-12 rounded-full right-0 bottom-36 md:hidden"
-              />
+              <div className="flex gap-6">
+                <a href="https://github.com/joeltdev" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
+                  <Github size={22} />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
+                  <Linkedin size={22} />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
+                  <Instagram size={22} />
+                </a>
+              </div>
             </div>
           </div>
+
+          {/* Right Column: Hero Image & Tech Bubbles */}
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
+            <div className="relative">
+              {/* Background Glow Effect */}
+              <div className="absolute inset-0 bg-gray-100 rounded-full blur-3xl -z-10 scale-90 opacity-50" />
+              
+              <img 
+                src={hero} 
+                alt="Joel Mathew" 
+                className="h-[400px] md:h-[500px] lg:h-[600px] w-auto object-contain relative z-10"
+              />
+
+              {/* Floating Tech Logos (Desktop Only) */}
+              <div className="absolute top-1/4 -left-12 hidden lg:flex w-16 h-16 bg-white rounded-2xl shadow-xl shadow-gray-200 items-center justify-center p-3 animate-bounce transition-all duration-1000" style={{ animationDuration: '3s' }}>
+                <img src={reactLogo} alt="React" className="w-full h-full object-contain" />
+              </div>
+              <div className="absolute bottom-1/4 -right-8 hidden lg:flex w-14 h-14 bg-white rounded-2xl shadow-xl shadow-gray-200 items-center justify-center p-3 animate-bounce transition-all duration-1000" style={{ animationDuration: '4s' }}>
+                <img src={nextLogo} alt="Next.js" className="w-full h-full object-contain" />
+              </div>
+              <div className="absolute -bottom-4 left-1/4 hidden lg:flex w-14 h-14 bg-white rounded-2xl shadow-xl shadow-gray-200 items-center justify-center p-3 animate-bounce transition-all duration-1000" style={{ animationDuration: '5s' }}>
+                <img src={tailwindLogo} alt="Tailwind" className="w-full h-full object-contain" />
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div className="absolute top-52 right-10 hidden bg-[#FEFEFE] p-4 md:flex flex-col gap-8 rounded-full">
-        <a href="https://github.com/joeltdev" target="blank">
-          {" "}
-          <FaGithub className="w-10 h-10 text-gray-900" />
-        </a>
-        <a href="https://www.instagram.com/" target="blank">
-          {" "}
-          <FaInstagram className="w-10 h-10 text-gray-900" />
-        </a>
-        <a href="https://x.com/" target="blank">
-          <FaXTwitter className="w-10 h-10 text-gray-900" />
-        </a>{" "}
-        <a
-          href="https://www.linkedin.com/in/joel-thomas-mathew-18422b1b8/"
-          target="blank"
-        >
-          {" "}
-          <FaLinkedin className="w-10 h-10 text-gray-900" />
-        </a>
       </div>
     </section>
   );
