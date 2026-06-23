@@ -79,8 +79,8 @@ const About = () => {
                   <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-bold mt-1 block">Projects Built</span>
                 </div>
                 <div className="group/stat bg-white/60 backdrop-blur-sm border border-gray-100/80 rounded-2xl p-4 hover:border-gray-200/85 hover:bg-white hover:shadow-lg hover:shadow-gray-200/30 transition-all duration-300">
-                  <span className="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight block group-hover/stat:-translate-y-0.5 transition-transform duration-300">24/7</span>
-                  <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-bold mt-1 block">Learning</span>
+                  <span className="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight block group-hover/stat:-translate-y-0.5 transition-transform duration-300">10k+</span>
+                  <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-bold mt-1 block">Global Learners</span>
                 </div>
               </div>
             </div>
