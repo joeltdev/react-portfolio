@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative py-32 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
+    <section id="about" className="relative pt-44 pb-32 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden scroll-mt-28">
       {/* Background Decorative Text & Glows */}
       <div className="absolute top-10 right-0 pointer-events-none select-none overflow-hidden">
         <span className="text-[20rem] font-black text-gray-200/40 leading-none tracking-tighter">
