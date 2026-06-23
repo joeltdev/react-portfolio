@@ -83,22 +83,23 @@ const Hero = () => {
           <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
             <div className="relative group/image">
               {/* Outer soft gradient halo ring */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2.7rem] blur opacity-20 group-hover/image:opacity-35 transition duration-700 pointer-events-none" />
+              <div className="absolute -inset-3 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-[2.8rem] blur-xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 pointer-events-none" />
               
-              {/* Offset Artistic Border (Underneath) */}
-              <div className="absolute inset-0 border border-gray-900 rounded-[2.5rem] translate-x-4 translate-y-4 -z-10 group-hover/image:translate-x-2 group-hover/image:translate-y-2 transition-transform duration-500" />
+              {/* Subtle Outer Frame Layer */}
+              <div className="absolute inset-0 border border-gray-100 rounded-[2.5rem] scale-[1.03] pointer-events-none transition-transform duration-500 group-hover/image:scale-[1.04]" />
               
               {/* Framed Image Container */}
-              <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-3 shadow-2xl shadow-gray-200/50 z-10 w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[3/4] mx-auto lg:ml-auto lg:mr-0 transition-transform duration-500 group-hover/image:scale-[1.01]">
+              <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-3 shadow-xl hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] z-10 w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[3/4] mx-auto lg:ml-auto lg:mr-0 transition-all duration-500 group-hover/image:scale-[1.01] group-hover/image:border-blue-200/50">
                 <img 
                   src={hero} 
                   alt="Joel Mathew" 
-                  className="w-full h-full object-cover rounded-[1.8rem] contrast-[1.04] saturate-[1.08] brightness-[0.98] grayscale-[15%] group-hover/image:grayscale-0 transition-all duration-700 ease-out"
+                  className="w-full h-full object-cover rounded-[1.8rem] contrast-[1.03] saturate-[1.06] brightness-[0.99] grayscale-[10%] group-hover/image:grayscale-0 transition-all duration-700 ease-out"
                 />
               </div>
 
               {/* Chic Interactive Overlay Badge */}
-              <div className="absolute bottom-6 right-6 bg-gray-950/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-[0.2em] px-4 py-2.5 rounded-2xl border border-white/10 shadow-lg z-20 transition-all duration-500 group-hover/image:translate-y-[-2px] pointer-events-none">
+              <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md text-gray-950 text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-2.5 rounded-2xl border border-gray-100 shadow-md z-20 flex items-center gap-2 transition-all duration-500 group-hover/image:translate-y-[-2px] pointer-events-none">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
                 Joel Mathew
               </div>
 
