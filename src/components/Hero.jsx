@@ -7,7 +7,7 @@ import tailwindLogo from "../assets/Tailwind Css.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center pt-32 md:pt-40 pb-16 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       
       {/* Grid Backdrop Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
