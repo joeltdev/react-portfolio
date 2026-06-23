@@ -89,7 +89,7 @@ const Hero = () => {
               <div className="absolute inset-0 border border-gray-100 rounded-[2.5rem] scale-[1.03] pointer-events-none transition-transform duration-500 group-hover/image:scale-[1.04]" />
               
               {/* Framed Image Container */}
-              <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-3 shadow-xl hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] z-10 w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[3/4] mx-auto lg:ml-auto lg:mr-0 transition-all duration-500 group-hover/image:scale-[1.01] group-hover/image:border-blue-200/50">
+              <div className="relative overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-3 shadow-xl hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] z-10 w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] aspect-[3/4] mx-auto lg:ml-auto lg:mr-0 transition-all duration-500 group-hover/image:scale-[1.01] group-hover/image:border-blue-200/50">
                 <img 
                   src={hero} 
                   alt="Joel Mathew" 
