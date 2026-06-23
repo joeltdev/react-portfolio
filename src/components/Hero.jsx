@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column: Hero Image & Tech Bubbles */}
-          <div className="lg:col-span-5 relative flex justify-center lg:justify-center">
+          <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
             <div className="relative group/image">
               {/* Outer soft gradient halo ring */}
               <div className="absolute -inset-3 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-[2.8rem] blur-xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 pointer-events-none" />
