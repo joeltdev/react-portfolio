@@ -46,20 +46,33 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 px-6 bg-transparent relative">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="pt-16 pb-32 px-6 bg-gray-50 relative overflow-hidden">
+      {/* Grid & Ambient Glow Backdrop */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+      <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-blue-100/25 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="absolute bottom-1/4 right-1/10 w-[30rem] h-[30rem] bg-indigo-50/40 rounded-full blur-3xl -z-10 pointer-events-none animate-pulse" style={{ animationDuration: '11s' }} />
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
           {/* Left Side: Editorial Contact Info */}
           <div className="lg:col-span-5 flex flex-col">
             <div className="mb-12">
-              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-gray-500 mb-4">
-                Available for projects
-              </h2>
-              <h3 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tighter">
-                Get in <br /> touch<span className="text-gray-300">.</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100/80 text-blue-600 mb-6 self-start">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-600"></span>
+                </span>
+                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Available for projects</span>
+              </div>
+              
+              <h3 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-950 mb-6 tracking-tighter leading-[1.1]">
+                Get in{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800">
+                  touch.
+                </span>
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-sm">
+              <p className="text-lg text-gray-600 leading-relaxed max-w-sm font-light">
                 Have a vision? Let&rsquo;s turn it into a digital reality. Reach out via the form or through my social channels.
               </p>
             </div>
@@ -67,39 +80,29 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-3">Email Me</p>
-                <a href="mailto:joelmathew@example.com" className="text-lg font-bold text-gray-900 hover:text-gray-600 transition-colors flex items-center gap-1">
-                  joelmathew@example.com
+                <a href="mailto:joelmathew857@gmail.com" className="text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors flex items-center gap-1">
+                  joelmathew857@gmail.com
                 </a>
               </div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-3">Socials</p>
                 <div className="flex gap-4">
-                  <a href="https://github.com/joeltdev" target="_blank" rel="noreferrer" className="text-gray-900 hover:text-gray-400 transition-colors">
-                    <Github size={20} />
-                  </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-gray-900 hover:text-gray-400 transition-colors">
-                    <Linkedin size={20} />
-                  </a>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-900 hover:text-gray-400 transition-colors">
-                    <Instagram size={20} />
-                  </a>
+                  {[
+                    { icon: Github, url: "https://github.com/joeltdev" },
+                    { icon: Linkedin, url: "https://linkedin.com" },
+                    { icon: Instagram, url: "https://instagram.com" }
+                  ].map(({ icon: Icon, url }, i) => (
+                    <a 
+                      key={i}
+                      href={url} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="w-12 h-12 flex items-center justify-center rounded-2xl border border-gray-200 bg-white text-gray-500 hover:text-blue-600 hover:border-blue-200 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                    >
+                      <Icon size={20} />
+                    </a>
+                  ))}
                 </div>
-              </div>
-            </div>
-
-            {/* Response Time Badge */}
-            <div className="p-6 bg-gray-50 border border-gray-100 rounded-3xl flex items-center justify-between group cursor-default">
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
-                  <MessageSquare size={18} className="text-gray-900" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Response Time</p>
-                  <p className="text-sm font-bold text-gray-900 uppercase tracking-tighter">Within 24 Hours</p>
-                </div>
-              </div>
-              <div className="px-3 py-1 bg-blue-100 text-blue-600 text-[10px] font-bold rounded-full uppercase tracking-widest">
-                Fast Reply
               </div>
             </div>
           </div>
@@ -108,7 +111,7 @@ const Contact = () => {
           <div className="lg:col-span-7">
             <form
               onSubmit={onSubmit}
-              className="bg-white p-10 md:p-14 rounded-[2.5rem] border border-gray-100 shadow-[0_30px_60px_rgba(0,0,0,0.08)] relative"
+              className="bg-white/80 backdrop-blur-md p-10 md:p-14 rounded-[2.5rem] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.04)] relative"
             >
               <div className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -119,7 +122,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       placeholder="Jane Doe"
-                      className="w-full px-6 py-5 bg-gray-50 border border-transparent rounded-2xl text-gray-900 placeholder:text-gray-400 focus:bg-white focus:border-gray-200 focus:outline-none transition-all duration-300"
+                      className="w-full px-6 py-5 bg-white border border-gray-100 rounded-2xl text-gray-900 placeholder:text-gray-400 focus:border-blue-400 focus:ring-1 focus:ring-blue-400/20 focus:outline-none transition-all duration-300 shadow-sm"
                     />
                   </div>
                   <div className="space-y-3">
@@ -129,7 +132,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       placeholder="jane@example.com"
-                      className="w-full px-6 py-5 bg-gray-50 border border-transparent rounded-2xl text-gray-900 placeholder:text-gray-400 focus:bg-white focus:border-gray-200 focus:outline-none transition-all duration-300"
+                      className="w-full px-6 py-5 bg-white border border-gray-100 rounded-2xl text-gray-900 placeholder:text-gray-400 focus:border-blue-400 focus:ring-1 focus:ring-blue-400/20 focus:outline-none transition-all duration-300 shadow-sm"
                     />
                   </div>
                 </div>
@@ -141,20 +144,19 @@ const Contact = () => {
                     name="message"
                     rows="4"
                     placeholder="Tell me about your project or just say hi..."
-                    className="w-full px-6 py-5 bg-gray-50 border border-transparent rounded-2xl text-gray-900 placeholder:text-gray-400 focus:bg-white focus:border-gray-200 focus:outline-none transition-all duration-300 resize-none"
+                    className="w-full px-6 py-5 bg-white border border-gray-100 rounded-2xl text-gray-900 placeholder:text-gray-400 focus:border-blue-400 focus:ring-1 focus:ring-blue-400/20 focus:outline-none transition-all duration-300 resize-none shadow-sm"
                   />
                 </div>
 
                 <button
                   disabled={isSubmitting}
-                  className="w-full py-6 bg-gray-900 text-white rounded-2xl font-bold tracking-[0.2em] uppercase text-xs hover:bg-black transition-all duration-300 flex items-center justify-center gap-3 active:scale-[0.98] shadow-lg shadow-gray-200"
+                  className="group/btn relative overflow-hidden w-full py-6 bg-gray-950 text-white rounded-2xl font-bold tracking-[0.2em] uppercase text-xs transition-all duration-300 flex items-center justify-center gap-3 active:scale-[0.98] shadow-lg shadow-gray-200/50"
                 >
-                  {isSubmitting ? "Processing..." : (
-                    <>
-                      Send Message
-                      <Send size={14} className="group-hover:translate-x-1 transition-transform" />
-                    </>
-                  )}
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    {isSubmitting ? "Processing..." : "Send Message"}
+                    {!isSubmitting && <Send size={14} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300" />}
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-305 -z-0" />
                 </button>
               </div>
             </form>

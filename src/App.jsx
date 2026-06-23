@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-// import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      {/* <Testimonials /> */}
+      <Experience />
       <Contact />
       <Footer />
     </div>
