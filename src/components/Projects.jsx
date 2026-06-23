@@ -60,7 +60,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="relative py-32 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <section id="projects" className="relative pt-16 md:pt-32 pb-32 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
       
       {/* Grid & Ambient Glow Backdrop */}
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-[0.35] pointer-events-none" />
