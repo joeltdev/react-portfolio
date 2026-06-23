@@ -93,14 +93,8 @@ const Hero = () => {
                 <img 
                   src={hero} 
                   alt="Joel Mathew" 
-                  className="w-full h-full object-cover rounded-[1.8rem] contrast-[1.03] saturate-[1.06] brightness-[0.99] grayscale-[10%] group-hover/image:grayscale-0 transition-all duration-700 ease-out"
+                  className="w-full h-full object-cover object-top pt-6 rounded-[1.8rem] contrast-[1.03] saturate-[1.06] brightness-[0.99] grayscale-[10%] group-hover/image:grayscale-0 transition-all duration-700 ease-out"
                 />
-              </div>
-
-              {/* Chic Interactive Overlay Badge */}
-              <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md text-gray-950 text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-2.5 rounded-2xl border border-gray-100 shadow-md z-20 flex items-center gap-2 transition-all duration-500 group-hover/image:translate-y-[-2px] pointer-events-none">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                Joel Mathew
               </div>
 
               {/* Floating Tech Logos (Desktop Only) */}

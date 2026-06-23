@@ -8,7 +8,7 @@ const Experience = () => {
       role: "Full-Stack Developer & AI Content Creator",
       company: "Freelance & Video Creator",
       period: "2023 - Present",
-      desc: "Architecting high-performance web products and integrating intelligent AI models. Producing video content teaching 10k+ developers how to build AI-powered applications, LLM workflows, and scalable full-stack systems.",
+      desc: "Architecting high-performance web products and integrating intelligent AI models.",
       skills: ["React", "Next.js", "Payload CMS", "AI Integration", "LLMs", "Node.js"],
     },
     {

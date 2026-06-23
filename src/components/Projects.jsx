@@ -1,7 +1,7 @@
 import React from "react";
-import KCSubramanian from "../assets/kcsubramanian.png";
+import KCSubramanian from "../assets/kcsubramanian_mockup.jpg";
 import PhysicianScreenshot from "../assets/screenshot .png";
-import MarkNestImg from "../assets/MarkNest.png";
+import BrickratImg from "../assets/brickrat.png";
 import InelsSmartHome from "../assets/inels_smart_home.png";
 import IitConference from "../assets/iit_conference.png";
 import SloCamera from "../assets/slo_camera.png";
@@ -27,11 +27,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "MarkNest",
-      desc: "Save, organize, and revisit your favorite content in one encrypted, beautiful nest.",
-      image: MarkNestImg,
-      live: "https://preview--marknest-ui-haven.lovable.app/signin",
-      github: "https://github.com/rohitsingh93300/supercars",
+      title: "Brickrat",
+      desc: "Turn SketchUp models into shareable, interactive browser walkthroughs, allowing clients to walk through their future homes before they are built.",
+      image: BrickratImg,
+      live: "https://brickrat.com/",
+      github: "",
     },
     {
       id: 4,
