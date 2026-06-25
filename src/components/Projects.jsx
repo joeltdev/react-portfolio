@@ -1,6 +1,6 @@
 import React from "react";
 import KCSubramanian from "../assets/kcsubramanian_mockup.jpg";
-import PhysicianScreenshot from "../assets/screenshot .png";
+import PhysicianScreenshot from "../assets/physician_mockup.jpg";
 import BrickratImg from "../assets/brickrat.png";
 import InelsSmartHome from "../assets/inels_smart_home.png";
 import IitConference from "../assets/iit_conference.png";
