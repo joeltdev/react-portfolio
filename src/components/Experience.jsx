@@ -5,27 +5,24 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Full-Stack Developer & AI Content Creator",
-      company: "Freelance & Video Creator",
-      period: "2023 - Present",
-      desc: "Architecting high-performance web products and integrating intelligent AI models.",
-      skills: ["React", "Next.js", "Payload CMS", "AI Integration", "LLMs", "Node.js"],
+      role: "Front-End Developer",
+      company: "Realviz LLP",
+      period: "2024 – 2026",
+      desc: "Developed and maintained responsive web interfaces for Brickrat, building reusable UI components and interactive features. Worked with the team to turn product requirements and designs into functional user experiences and refined them through testing and debugging.",
     },
     {
       id: 2,
-      role: "Full-Stack Engineer",
-      company: "TechFlow Systems",
-      period: "2022 - 2023",
-      desc: "Developed scalable backend services using Payload CMS and built fluid, responsive frontends using Next.js. Optimized database querying and caching architectures to reduce API latencies by 30%.",
-      skills: ["Payload CMS", "React", "Tailwind CSS", "Redis", "PostgreSQL"],
+      role: "Front-End Developer Trainee",
+      company: "Brototype, Bangalore",
+      period: "2023 – 2024",
+      desc: "Built responsive web applications through hands-on projects, working with React.js, JavaScript, HTML, CSS, and Tailwind CSS. Practiced Git, debugging, testing, and collaborative development.",
     },
     {
       id: 3,
-      role: "Frontend Developer",
+      role: "Front-End Developer",
       company: "Webelite Builders",
-      period: "2021 - 2022",
-      desc: "Collaborated on translating high-fidelity UI/UX mockups into pixel-perfect, accessible React components. Contributed to core internal design libraries and built responsive layouts.",
-      skills: ["HTML5", "CSS3", "JavaScript", "React", "Tailwind CSS"],
+      period: "2021 – 2022",
+      desc: "Worked on translating UI/UX designs into responsive and user-friendly web interfaces, building reusable React components and responsive layouts.",
     },
   ];
 
@@ -110,21 +107,9 @@ const Experience = () => {
                       {exp.role}
                     </h3>
                     
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                    <p className="text-gray-600 text-sm leading-relaxed font-light">
                       {exp.desc}
                     </p>
-
-                    {/* Skill Badges */}
-                    <div className="flex flex-wrap gap-2">
-                      {exp.skills.map((skill) => (
-                        <span 
-                          key={skill} 
-                          className="px-2.5 py-1 text-[10px] font-bold text-gray-500 bg-gray-50 border border-gray-100 rounded-lg hover:border-blue-100 hover:text-blue-600 hover:bg-blue-50/30 transition-all duration-200 uppercase tracking-wider"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               );

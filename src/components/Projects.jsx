@@ -1,4 +1,5 @@
 import React from "react";
+import MyCareerWaveImg from "../assets/mycareerwave.png";
 import KCSubramanian from "../assets/kcsubramanian_mockup.jpg";
 import PhysicianScreenshot from "../assets/physician_mockup.jpg";
 import BrickratImg from "../assets/brickrat.png";
@@ -11,6 +12,14 @@ const Projects = () => {
   const projectJson = [
     {
       id: 1,
+      title: "MyCareerWave",
+      desc: "A modern career platform that helps users discover relevant jobs and career opportunities.",
+      image: MyCareerWaveImg,
+      live: "https://mycareerwave.com",
+      github: "",
+    },
+    {
+      id: 2,
       title: "Physician Website",
       desc: "Modern, mobile-optimized site for Dr. Sruthy Jose with a trust-focused light-blue design and a clear Book Appointment CTA.",
       image: PhysicianScreenshot,
@@ -18,7 +27,7 @@ const Projects = () => {
       github: "",
     },
     {
-      id: 2,
+      id: 3,
       title: "K.C. Subramanian",
       desc: "A clean, modern, and professional website for K.C. Subramanian with a focus on seamless user experience and accessibility.",
       image: KCSubramanian,
@@ -26,7 +35,7 @@ const Projects = () => {
       github: "",
     },
     {
-      id: 3,
+      id: 4,
       title: "Brickrat",
       desc: "Turn SketchUp models into shareable, interactive browser walkthroughs, allowing clients to walk through their future homes before they are built.",
       image: BrickratImg,
@@ -34,7 +43,7 @@ const Projects = () => {
       github: "",
     },
     {
-      id: 4,
+      id: 5,
       title: "iNELS Automation",
       desc: "Wired and wireless smart building automation platform for managing lighting, HVAC, shading, and energy systems in homes and commercial properties.",
       image: InelsSmartHome,
@@ -42,7 +51,7 @@ const Projects = () => {
       github: "",
     },
     {
-      id: 5,
+      id: 6,
       title: "IIT Bay Area Conference",
       desc: "The official platform for the West Coast's largest IIT networking event, bringing together founders, visionary investors, and engineering leaders.",
       image: IitConference,
@@ -50,7 +59,7 @@ const Projects = () => {
       github: "",
     },
     {
-      id: 6,
+      id: 7,
       title: "Slo Camera",
       desc: "A mobile application that turns your phone into a film camera, letting you shoot a pack of frames and receive real printed photos by mail.",
       image: SloCamera,

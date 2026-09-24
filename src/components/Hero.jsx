@@ -44,7 +44,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-              Crafting high-performance digital experiences with <span className="text-gray-950 font-medium">React</span>, <span className="text-gray-950 font-medium">Next.js</span>, and <span className="text-gray-950 font-medium">Payload CMS</span>.
+              Software Developer who turns ideas into modern, user-focused digital products, combining practical engineering with AI-assisted development.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start w-full sm:w-auto">
